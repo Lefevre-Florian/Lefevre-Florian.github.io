@@ -4,16 +4,21 @@ Based on a template by : * Mark Otto
 Author : @Lefevre Florian
 Date : 05/05/2023
 -->
-<!doctype html>
-<html lang="fr" class="ltr">
+<!--
+Based on a template by : * Mark Otto
+                         * Jacob Thornton and Bootstrap contributors
+Author : @Lefevre Florian
+Date : 31/08/2023
+-->
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="cover page for a student project demo website">
-    <title>Cover</title>
+    <title>Lefevre Florian - Projects list</title>
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap-5.0.2-dist/custom_css/cover.css" rel="stylesheet">
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <style media="screen">
         html, body {
           margin: 0;
@@ -22,24 +27,63 @@ Date : 05/05/2023
     </style>
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
         <div>
-          <h3 class="float-md-start mb-0">Lefevre Florian - Portfolio</h3>
+          <h4 class="float-md-start mb-0">Lefevre Florian - Portfolio</h4>
           <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="pages/cv.html">About</a>
           </nav>
         </div>
       </header>
-      <main class="px-3">
-        <div class="align-items-center justify-content-center">
-          <h1>Welcome</h1>
-          <p class="lead">Discover the different projects</p>
-          <p class="lead">
-            <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Click</a>
-          </p>
+      <main>
+        <div class="align-items-center justify-content-center content">
+            <h1>Bienvenue</h1>
+            <p class="lead">Découvrez les projets créés pendant mes études et à côté, bon jeu !</p>
+        </div>
+        <div class="album py-5">
+          <div class="container">
+
+            <!-- Category : 2023 -->
+            <div>
+              <div class="row">
+                <h3>Sortie : 2023</h3>
+              </div>
+
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-dark justify-content-center">
+                <!-- Sokoban -->
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="card-img-top" src="media/images/poster/poster_sokoban.jpg" alt="Sokoban poster">
+                    <div class="card-body">
+                      <h5 class="text-dark">Soak or banned !</h5>
+                      <p class="card-text text-dark">
+                        <small class="text-muted">(Type de jeu : Puzzle / Réflexion / Jeu de type Sokoban)</small>
+                      </p>
+                      <a href="pages/projects/project_sokoban.html" class="btn btn-outline-secondary stretched-link">Consulter</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Shmup -->
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="card-img-top" src="media/images/poster/poster_shmup.png" alt="Sokoban poster">
+                    <div class="card-body">
+                      <h5 class="text-dark">Flee from Paris</h5>
+                      <p class="card-text text-dark">
+                        <small class="text-muted">(Type de jeu : Shoot'em up)</small>
+                      </p>
+                      <a href="#" class="btn btn-outline-secondary stretched-link">Consulter</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
         </div>
       </main>
     </div>
