@@ -24,6 +24,10 @@ Date : 31/08/2023
           margin: 0;
           height: 50%;
         }
+
+        span{
+          margin-right : 5px;
+        }
     </style>
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark">
@@ -31,10 +35,6 @@ Date : 31/08/2023
       <header class="mb-auto">
         <div>
           <h4 class="float-md-start mb-0">Lefevre Florian - Portfolio</h4>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link" href="pages/cv.html">About</a>
-          </nav>
         </div>
       </header>
       <main>
@@ -52,11 +52,18 @@ Date : 31/08/2023
               </div>
 
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-dark justify-content-center">
+
                 <!-- Sokoban -->
                 <div class="col">
                   <div class="card shadow-sm">
                     <img class="card-img-top" src="media/images/poster/poster_sokoban.JPG" alt="Sokoban poster">
                     <div class="card-body">
+                      <div class="row">
+                        <span class="badge bg-primary col-sm-1">C#</span>
+                        <span class="badge bg-danger col-sm-2">Godot</span>
+                        <span class="badge bg-secondary col-sm-3">Game dev</span>
+                        <span class="badge bg-secondary col-sm-3">Game design</span>
+                      </div>
                       <h5 class="text-dark">Soak or banned !</h5>
                       <p class="card-text text-dark">
                         <small class="text-muted">(Type de jeu : Puzzle / Réflexion / Jeu de type Sokoban)</small>
@@ -71,6 +78,12 @@ Date : 31/08/2023
                   <div class="card shadow-sm">
                     <img class="card-img-top" src="media/images/poster/poster_shmup.png" alt="Sokoban poster">
                     <div class="card-body">
+                      <div class="row justify-content">
+                        <span class="badge bg-primary col-sm-1">C#</span>
+                        <span class="badge bg-danger col-sm-2">Godot</span>
+                        <span class="badge bg-secondary col-sm-3">Game dev</span>
+                        <span class="badge bg-secondary col-sm-3">Game design</span>
+                      </div>
                       <h5 class="text-dark">Flee from Paris</h5>
                       <p class="card-text text-dark">
                         <small class="text-muted">(Type de jeu : Shoot'em up)</small>
@@ -82,15 +95,9 @@ Date : 31/08/2023
 
               </div>
             </div>
-
           </div>
         </div>
       </main>
-      <footer class="mb-auto">
-        <div>
-          <small><i>Using Github pages to run this website</i></small>
-        </div>
-      </footer>
     </div>
   </body>
 </html>
