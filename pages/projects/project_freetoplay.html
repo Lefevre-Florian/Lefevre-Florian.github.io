@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr" class="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="cover page for a student project demo website">
+    <title>Project : Landslider</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../bootstrap-5.0.2-dist/custom_css/cover.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style media="screen">
+        html, body {
+          margin: 0;
+          height: 50%;
+        }
+        .fancy_tile {
+          background: linear-gradient(to right, #212529 , #ffffff, #212529 50%);
+          background-position: 0 100%;
+          background-size: 200% 2px;
+          background-repeat: repeat-x;
+        }
+        #download {
+          position : relative;
+          margin-top : 10px;
+          margin-bottom : 10px;
+        }
+        .bg-dark-blue{
+          background-color : #212E42;
+        }
+
+        .bg-light-blue{
+          background-color : #709DE1;
+        }
+
+        .wrapper{
+          position:relative;
+        }
+
+        .wrapper-bottom{
+          position:absolute;
+          bottom:0;
+        }
+    </style>
+  </head>
+  <body class="text-white bg-dark">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark-blue">
+        <div class="container-fluid">
+          <h3 class="float-md-start mb-0">Lefevre Florian</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link active" aria-current="page" href="../../index.html">Projets</a>
+            <a class="nav-link" href="#">Experience</a>
+          </nav>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Game presentation -->
+      <div class="card mb-3 elite-bg container-fluid" style="margin-top : 50px">
+        <div class="row no-gutters">
+          <div class="col-md-6">
+            <video src="#" controls muted width="100%"></video>
+          </div>
+          <div class="col-md-6 text-white">
+            <div class="card-body">
+              <h4 class="text-center">Landslider</h4>
+              <div class="row text-center">
+                <p>
+                  Description à venir . . .
+                </p>
+              </div>
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h6>Classification</h6>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <img src="../../media/utils/ESRB_Pending.png" alt="Pending rating" width="10%">
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h6>Catégorie</h6>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <p>Free to play / Jeu de cartes / Jeu de réflexion</p>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h6>Date de fin de projet</h6>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <p>TBD</p>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h6>Informations de développement</h6>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <p>Unity 2D / C#</p>
+                  </div>
+                </div>
+                <div class="row align-items-center" style="margin-top:50px">
+                  <div class="col-md-6">
+                    <h6>Support</h6>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <p>Mobile (Android)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="button" name="button" class="btn btn-lg btn-success" id="download" disabled>
+                  <svg height="32" width="32" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #000000;"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="b75708d097f2188dff6617b0f00f7c43"> <path display="inline" d="M120.606,169h270.788v220.663c0,13.109-10.628,23.737-23.721,23.737h-27.123v67.203 c0,17.066-13.612,30.897-30.415,30.897c-16.846,0-30.438-13.831-30.438-30.897v-67.203h-47.371v67.203 c0,17.066-13.639,30.897-30.441,30.897c-16.799,0-30.437-13.831-30.437-30.897v-67.203h-27.099 c-13.096,0-23.744-10.628-23.744-23.737V169z M67.541,167.199c-16.974,0-30.723,13.963-30.723,31.2v121.937 c0,17.217,13.749,31.204,30.723,31.204c16.977,0,30.723-13.987,30.723-31.204V198.399 C98.264,181.162,84.518,167.199,67.541,167.199z M391.395,146.764H120.606c3.342-38.578,28.367-71.776,64.392-90.998 l-25.746-37.804c-3.472-5.098-2.162-12.054,2.946-15.525c5.102-3.471,12.044-2.151,15.533,2.943l28.061,41.232 c15.558-5.38,32.446-8.469,50.208-8.469c17.783,0,34.672,3.089,50.229,8.476L334.29,5.395c3.446-5.108,10.41-6.428,15.512-2.957 c5.108,3.471,6.418,10.427,2.946,15.525l-25.725,37.804C363.047,74.977,388.055,108.175,391.395,146.764z M213.865,94.345 c0-8.273-6.699-14.983-14.969-14.983c-8.291,0-14.99,6.71-14.99,14.983c0,8.269,6.721,14.976,14.99,14.976 S213.865,102.614,213.865,94.345z M329.992,94.345c0-8.273-6.722-14.983-14.99-14.983c-8.291,0-14.97,6.71-14.97,14.983 c0,8.269,6.679,14.976,14.97,14.976C323.271,109.321,329.992,102.614,329.992,94.345z M444.48,167.156 c-16.956,0-30.744,13.984-30.744,31.222v121.98c0,17.238,13.788,31.226,30.744,31.226c16.978,0,30.701-13.987,30.701-31.226 v-121.98C475.182,181.14,461.458,167.156,444.48,167.156z"> </path> </g> </g></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading text-start">Programmation</h2>
+            <p>Description coming soon . . .</p>
+          </div>
+          <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="40%" y="50%" fill="#000" dy=".3em">Coming soon . . .</text></svg>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 row order-md-2">
+            <h2 class="featurette-heading text-start">Crédits : </h2>
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <h3 class="lead">Game programming</h3>
+                 <p>
+                   Paul <b>Vincensini</b>
+                   <br>Florian <b>Lefevre</b>
+                   <br>Elias <b>Dridi</b>
+                   <br>Dorian <b>Husson</b>
+                 </p>
+              </div>
+              <div class="col-md-4 text-center">
+                <h3 class="lead">Game Design</h3>
+                 <p>
+                   Charles <b>Roger-Boutbien</b>
+                   <br>Shanna <b>Fellman</b>
+                   <br>Alexis <b>Martinat</b>
+                   <br>Léo <b>Chanut</b>
+                   <br>Léonard <b>Ruestchman</b>
+                 </p>
+              </div>
+              <div class="col-md-4 text-center">
+                <h3 class="lead">Music & Sound design</h3>
+                 <p>
+                   Pierre-Alexis <b>Conde</b>
+                   <br>Romain <b>Schmit</b>
+                 </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <h3 class="lead">Additional Game art</h3>
+                <p>
+                  Clémence <b></b> : Character art
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="40%" y="50%" fill="#000" dy=".3em">Coming soon . . .</text></svg>
+          </div>
+        </div>
+        <hr class="featurette-divider">
+      </div>
+    </main>
+  </body>
+</html>
