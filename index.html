@@ -1,9 +1,3 @@
-<!--
-Based on a template by : * Mark Otto
-                         * Jacob Thornton and Bootstrap contributors
-Author : @Lefevre Florian
-Date : 31/08/2023
--->
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -15,8 +9,8 @@ Date : 31/08/2023
     <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap-5.0.2-dist/custom_css/carousel.css" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
     <style media="screen">
         html, body {
           margin: 0;
@@ -37,11 +31,7 @@ Date : 31/08/2023
 
         div {
           align-content: center;
-        }
-
-        .carousel-inner > .item > img {
-          width: 70%;
-          margin: auto;
+          margin-bottom : 10px;
         }
     </style>
   </head>
@@ -61,37 +51,39 @@ Date : 31/08/2023
       <!-- Caroussel -->
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
           <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
           <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="media/images/poster/poster_sokoban.jpg" alt="Poster of Vampy Valentine">
+            <img src="media/images/poster/poster_vampy_valentine.png" alt="Poster of Vampy Valentine" width="50px" height="50px">
           </div>
           <div class="carousel-item">
-            <img src="media/images/poster/poster_vampy_valentine.png" alt="Poster of RUSH in the Dungeon">
+            <img src="media/images/poster/poster_sokoban.jpg" alt="Poster of Soaked or banned">
           </div>
           <div class="carousel-item">
-            <img src="media/images/poster/poster_vampy_valentine.png" alt="Poster of Soaked or banned">
+            <img src="media/images/poster/poster_shmup.png" alt="Poster of flee from Paris !">
           </div>
         </div>
       </div>
-
       <!-- Cards -->
-      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column d-flex h-100 text-center text-white ">
-        <div class="album py-5">
+      <div class="container d-flex p-3 mx-auto flex-column d-flex text-center text-white ">
+        <div class="album">
           <div class="container">
-
+            <h1>Bienvenue.</h1>
+            <p class="lead">Découvrez les projets créés pendant mes études et à côté, bon jeu !</p>
+          </div>
+          <div class="container">
             <!-- Category : 2024 -->
             <div>
-
+              <!-- Title -->
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
                 <h3 class="align-center">Sortie : 2024</h3>
               </div>
-
+              <!-- !Title -->
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-dark justify-content-center">
-                <!-- Sokoban -->
+                <!-- Platfomer -->
                 <div class="col">
                   <div class="card shadow-sm">
                     <img class="card-img-top" src="media/images/poster/poster_vampy_valentine.png" alt="Platformer poster">
@@ -110,15 +102,16 @@ Date : 31/08/2023
                     </div>
                   </div>
                 </div>
-
+                <!-- !Platformer -->
               </div>
-
+            </div>
+            <div>
+              <!-- Title -->
               <div class="row">
                 <h3>Sortie : 2023</h3>
               </div>
-
+              <!-- Title -->
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-dark justify-content-center">
-
                 <!-- RUSH -->
                 <div class="col">
                   <div class="card shadow-sm">
@@ -138,11 +131,11 @@ Date : 31/08/2023
                     </div>
                   </div>
                 </div>
-
+                <!-- !RUSH -->
                 <!-- Sokoban -->
                 <div class="col">
                   <div class="card shadow-sm">
-                    <img class="card-img-top" src="media/images/poster/poster_sokoban.JPG" alt="Sokoban poster">
+                    <img class="card-img-top" src="media/images/poster/poster_sokoban.jpg" alt="Sokoban poster">
                     <div class="card-body">
                       <div class="row">
                         <span class="badge bg-primary col-sm-1">C#</span>
@@ -158,7 +151,7 @@ Date : 31/08/2023
                     </div>
                   </div>
                 </div>
-
+                <!-- !Sokoban -->
                 <!-- Shmup -->
                 <div class="col">
                   <div class="card shadow-sm">
@@ -178,7 +171,7 @@ Date : 31/08/2023
                     </div>
                   </div>
                 </div>
-
+                <!-- !Shmup -->
               </div>
             </div>
           </div>
