@@ -1,253 +1,328 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lefevre Florian - Gameplay programmer & Game designer</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-5.0.2-dist/custom_css/cover.css" rel="stylesheet">
     <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap-5.0.2-dist/custom_css/carousel.css" rel="stylesheet">
-
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* IMPORT FONT (similar to screenshot aesthetic) */
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
-    <style media="screen">
-        html, body {
+        /* GLOBAL RESET */
+        body {
           margin: 0;
-          height: 50%;
+          padding: 0;
+          font-family: 'Space Grotesk', sans-serif;
+          color: #e7e7e7;
+          background-color: #0d0d0f;
+          background-image:
+              linear-gradient(#2222 1px, transparent 1px),
+              linear-gradient(90deg, #2222 1px, transparent 1px);
+          background-size: 80px 80px;
         }
 
-        span{
-          margin-right : 5px;
+        /* HEADER */
+        .header {
+        text-align: center;
+        font-size: 48px;
+        font-weight: 600;
+        padding: 80px 20px;
+        background: linear-gradient(to bottom, #000, #0d0d0f 60%);
+        letter-spacing: 1px;
         }
 
-        .bg-dark-blue{
-          background-color : #212E42;
+        /* SECTION TITLE */
+        .section-title {
+          font-size: 38px;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: 600;
+          letter-spacing: 2px;
+          margin-top: 120px;
+          margin-bottom: 40px;
+          padding-bottom: 12px;
+          border-bottom: 2px solid #56a6ff;
+          display: inline-block;
         }
 
-        .bg-light-blue{
-          background-color : #709DE1;
+        /* TITLE BLOCK */
+        .welcome-title {
+            margin-bottom: 40px;
         }
 
-        div {
-          align-content: center;
-          margin-bottom : 10px;
+        .welcome-title h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .welcome-line {
+            width: 60px;
+            height: 4px;
+            background-color: #4db3ff;
+            margin-bottom: 10px;
+        }
+
+        /* CARDS (Projects, Work Experience) */
+        .work-card,
+        .project-card {
+          flex-direction: column;
+          background: #141418;
+          border: 1px solid #1f1f23;
+          padding: 30px;
+          border-radius: 14px;
+          box-shadow: 0 6px 25px rgba(0,0,0,0.35);
+          transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .work-card:hover,
+        .project-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 12px 35px rgba(0,0,0,0.55);
+        }
+
+        /* COMPANY LOGOS */
+        .company-logo {
+          width: 130px;
+          height: 130px;
+          object-fit: contain;
+          margin-bottom: 20px;
+        }
+
+        /* PROJECT IMAGES */
+        .game-btn img {
+          width: 100%;
+          height: 190px;
+          object-fit: cover;
+          border-radius: 10px;
+          border: 1px solid #222;
+          transition: transform 0.3s ease;
+        }
+
+        .game-btn img:hover {
+          transform: scale(1.03);
+        }
+
+        /* PROJECT TITLE */
+        .project-title {
+          margin-top: 12px;
+          text-align: center;
+          font-size: 20px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        /* PROJECT SKILLS BELOW IMAGES */
+        .project-skills {
+          margin-top: 14px;
+          text-align: center;
+        }
+
+        .skill-tag {
+          display: inline-block;
+          color: #f7f7f7;
+          padding: 4px 12px;
+          border-radius: 6px;
+          font-size: 16px;
+          font-weight: 500;
+          margin: 0 4px;
+          box-shadow: 0 2px 6px #00000050;
         }
     </style>
-  </head>
-  <body class="text-white">
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark-blue">
-        <div class="container-fluid">
-          <h3 class="float-md-start mb-0">Lefevre Florian</h3>
-        </div>
-      </nav>
-    </header>
-    <main class="bg-dark">
-      <!-- Cards -->
-      <div class="container d-flex p-3 mx-auto flex-column d-flex text-center text-white ">
-        <div class="px-4 py-5 my-5 text-center">
-          <h1 class="display-5 fw-bold">Bienvenue.</h1>
-          <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Etudiant en 3e année à ISART Digital en Game design et programming en France, je suis passionné de conception de jeu, je possède des compétences en Game design, Level design et programmation gameplay et juiciness. Vous trouverez sur ce site les différents projets sur lesquels j'ai eu l'opportunité de travailler.</p>
-          </div>
-
-        </div>
-        <div class="album">
-          <div class="container">
-            <!-- Category : 2025 -->
-            <div>
-              <!-- Title -->
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
-                <h3 class="align-center">2025</h3>
-              </div>
-              <!-- !Title -->
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-dark justify-content-center">
-                <!-- Infiltration -->
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img class="card-img-top" src="media/images/poster/poster_lightmoor.png" alt="Poster of Lightmoor" height="25%">
-                    <div class="card-body">
-                      <div class="row">
-                        <span class="badge bg-primary col-sm-3">Blueprint</span>
-                        <span class="badge bg-danger col-sm-2">UE5</span>
-                        <span class="badge bg-secondary col-sm-3">Game dev</span>
-                      </div>
-                      <h5 class="text-dark">Lightmoor</h5>
-                      <p class="card-text text-dark">
-                        <small class="text-muted">(Type de jeu : Exploration / Enigme)</small>
-                      </p>
-                      <a href="pages/projects/project_adventure.html" class="btn btn-outline-secondary stretched-link">En savoir plus</a>
-                    </div>
-                  </div>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        LEFEVRE Florence
+    </div>
+    <!-- CONTENT CONTAINER -->
+    <div class="container mt-5">
+        <!-- WELCOME SECTION -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="welcome-title">
+                  <div class="welcome-line"></div>
+                  <h2>BIENVENUE</h2>
                 </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img class="card-img-top" src="media/images/poster/poster_infiltration.png" alt="Poster of Landsliders" height="25%">
-                    <div class="card-body">
-                      <div class="row">
-                        <span class="badge bg-primary col-sm-3">Blueprint</span>
-                        <span class="badge bg-danger col-sm-2">UE5</span>
-                        <span class="badge bg-secondary col-sm-3">Game dev</span>
-                        <span class="badge bg-secondary col-sm-3">Game design</span>
-                      </div>
-                      <h5 class="text-dark">The Escape of Dame Bonny Jaws</h5>
-                      <p class="card-text text-dark">
-                        <small class="text-muted">(Type de jeu : Platformer 3D / Infiltration)</small>
-                      </p>
-                      <a href="pages/projects/project_infiltration.html" class="btn btn-outline-secondary stretched-link">En savoir plus</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- !Infiltration -->
+                <div>
+                  <p>
+                      Bonjour et bienvenue, je suis <b><em>Lefevre Florence</em></b>. Etudiante en Gameplay programming et Game design à ISART Digital à Paris.
+                      <br>
+                      Je suis passionnée de développement et conception de jeu et j'ai eu l'opportunité de travailler et d'explorer différents aspects
+                      du métier à travers plusieurs projets et postes professionnels que j'ai pu occuper.
+                      <br>
+                  </p>
+                  <p>
+                      J'ai eu l'opportunité de travailler sur différents moteurs comme
+                      <span class="skill-tag" style="background-color:#5BCEFA">Godot</span>,
+                      <span class="skill-tag" style="background-color:#5BCEFA">Unity</span>,
+                      <span class="skill-tag" style="background-color:#5BCEFA">Unreal</span>
+                      <br>
+                  </p>
+                  <p>
+                      Je suis aussi intéressée par le Game design, sujet que j'ai la chance d'étudier au quotidien.
+                  </p>
               </div>
             </div>
-            <!-- Category : 2024 -->
-            <div>
-              <!-- Title -->
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
-                <h3 class="align-center">2024</h3>
-              </div>
-              <!-- !Title -->
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-dark justify-content-center">
-                <!-- Platfomer3D -->
-                <div class="col" hidden>
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="500" height="280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="40%" y="50%" fill="#000">Coming soon...</text></svg>
-                    <div class="card-body">
-                      <div class="row">
-                        <span class="badge bg-primary col-sm-1">C#</span>
-                        <span class="badge bg-danger col-sm-2">Unity 3D</span>
-                        <span class="badge bg-secondary col-sm-3">Game dev</span>
-                        <span class="badge bg-secondary col-sm-3">Game design</span>
-                      </div>
-                      <h5 class="text-dark">Uku and the Spirit temple</h5>
-                      <p class="card-text text-dark">
-                        <small class="text-muted">(Type de jeu : Platformer 3D / Action)</small>
-                      </p>
-                      <a href="pages/projects/project_pea.html" class="btn btn-outline-secondary stretched-link">En savoir plus</a>
-                    </div>
-                  </div>
+            <div class="col-md-6">
+                <div>
+                  <div class="welcome-line"></div>
+                  <h4>Gameplay programmer</h4>
+                  <p>
+                    En tant que gameplay programmeuse, j'ai eu l'occasion de travailler sur les différents aspects du développement et de l'intégration. J'ai une appétance
+                    particulière pour la programmation 3C. Mais je suis aussi intéressée par la programmation d'outils ou l'optimisation de code
+                    <br>
+                    Je suis formée sur
+                    <span class="skill-tag" style="background-color:#5BCEFA">C++</span>,
+                    <span class="skill-tag" style="background-color:#5BCEFA">Blueprint</span>,
+                    <span class="skill-tag" style="background-color:#5BCEFA">C#</span>
+                  </p>
                 </div>
-                <!-- !Platformer3D -->
-                <!-- Free to play -->
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img class="card-img-top" src="media/images/poster/poster_landsliders.png" alt="Platformer of Landsliders" height="25%">
-                    <div class="card-body">
-                      <div class="row">
-                        <span class="badge bg-primary col-sm-1">C#</span>
-                        <span class="badge bg-info col-sm-1">Git</span>
-                        <span class="badge bg-danger col-sm-2">Unity 2D</span>
-                        <span class="badge bg-secondary col-sm-3">Game dev</span>
-                      </div>
-                      <h5 class="text-dark">Landsliders</h5>
-                      <p class="card-text text-dark">
-                        <small class="text-muted">(Type de jeu : Free to play / Jeu de cartes / Jeu de réflexion)</small>
-                      </p>
-                      <a href="pages/projects/project_freetoplay.html" class="btn btn-outline-secondary stretched-link">En savoir plus</a>
-                    </div>
-                  </div>
+                <div>
+                  <div class="welcome-line"></div>
+                  <h4>Game designer</h4>
+                  <p>
+                    Dans ma formation j'ai eu aussi la possibilité d'apprendre la conception de jeu, à travers divers sujets comme le <b>Level design</b> ou l'<b>UX design</b>.
+                    <br>
+                    Sujets sur lesquels j'ai pu travailler durant les projets de ma formation et que je continue d'étudier en parallèle de cette dernière.
+                  </p>
                 </div>
-                <!-- !Free to play -->
-                <!-- Platfomer -->
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img class="card-img-top" src="media/images/poster/poster_vampy_valentine.png" alt="Platformer poster">
-                    <div class="card-body">
-                      <div class="row">
-                        <span class="badge bg-primary col-sm-1">C#</span>
-                        <span class="badge bg-info col-sm-1">Git</span>
-                        <span class="badge bg-danger col-sm-2">Unity 2D</span>
-                        <span class="badge bg-secondary col-sm-3">Game dev</span>
-                        <span class="badge bg-secondary col-sm-3">Game design</span>
-                      </div>
-                      <h5 class="text-dark">Vampy Valentine</h5>
-                      <p class="card-text text-dark">
-                        <small class="text-muted">(Type de jeu : Platformer 2D)</small>
-                      </p>
-                      <a href="pages/projects/project_platformer.html" class="btn btn-outline-secondary stretched-link">En savoir plus</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- !Platformer -->
-              </div>
             </div>
-            <div>
-              <!-- Title -->
-              <div class="row">
-                <h3>2023</h3>
-              </div>
-              <!-- Title -->
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-dark justify-content-center">
-                <!-- RUSH -->
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img class="card-img-top" src="media/images/poster/poster_rush.png" alt="Rush in the Dungeon poster">
-                    <div class="card-body">
-                      <div class="row">
-                        <span class="badge bg-primary col-sm-1">C#</span>
-                        <span class="badge bg-info col-sm-1">Git</span>
-                        <span class="badge bg-danger col-sm-2">Unity 3D</span>
-                        <span class="badge bg-secondary col-sm-3">Game dev</span>
-                        <span class="badge bg-secondary col-sm-3">Level design</span>
-                      </div>
-                      <h5 class="text-dark">RUSH in the Dungeon</h5>
-                      <p class="card-text text-dark">
-                        <small class="text-muted">(Type de jeu : Puzzle 3D / Réflexion)</small>
-                      </p>
-                      <a href="pages/projects/project_rush.html" class="btn btn-outline-secondary stretched-link">En savoir plus</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- !RUSH -->
-                <!-- Sokoban -->
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img class="card-img-top" src="media/images/poster/poster_sokoban.JPG" alt="Sokoban poster">
-                    <div class="card-body">
-                      <div class="row">
-                        <span class="badge bg-primary col-sm-1">C#</span>
-                        <span class="badge bg-info col-sm-1">Git</span>
-                        <span class="badge bg-danger col-sm-2">Godot 2D</span>
-                        <span class="badge bg-secondary col-sm-3">Game dev</span>
-                        <span class="badge bg-secondary col-sm-3">Game design</span>
-                      </div>
-                      <h5 class="text-dark">Soaked or banned !</h5>
-                      <p class="card-text text-dark">
-                        <small class="text-muted">(Type de jeu : Puzzle / Réflexion / Jeu de type Sokoban)</small>
-                      </p>
-                      <a href="pages/projects/project_sokoban.html" class="btn btn-outline-secondary stretched-link">En savoir plus</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- !Sokoban -->
-                <!-- Shmup -->
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img class="card-img-top" src="media/images/poster/poster_shmup.png" alt="Sokoban poster">
-                    <div class="card-body">
-                      <div class="row justify-content">
-                        <span class="badge bg-primary col-sm-1">C#</span>
-                        <span class="badge bg-info col-sm-1">Git</span>
-                        <span class="badge bg-danger col-sm-2">Godot 2D</span>
-                        <span class="badge bg-secondary col-sm-3">Game dev</span>
-                        <span class="badge bg-secondary col-sm-3">Game design</span>
-                      </div>
-                      <h5 class="text-dark">Flee from Paris</h5>
-                      <p class="card-text text-dark">
-                        <small class="text-muted">(Type de jeu : Shoot'em up)</small>
-                      </p>
-                      <a href="pages/projects/project_shmup.html" class="btn btn-outline-secondary stretched-link">En savoir plus</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- !Shmup -->
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </main>
-  </body>
+        <!-- PROFESSIONAL WORK -->
+        <div class="row mt-4">
+          <h2 class="section-title">Professional Work</h2>
+        </div>
+        <div class="row justify-content-center mt-4" style="display:flex; gap:1rem">
+            <!-- Work 1 -->
+            <div class="col-md-4 mb-5">
+                <div class="work-card">
+                  <div class="project-title">
+                    <img src="media/images/Company/HoloVR_Logo.jpg" class="company-logo" alt="Company Logo">
+                    <h4>R&D Programmer - HoloVR Prod</h4>
+                    <h6>(Févr. 2025 - Avr. 2025)</h6>
+                  </div>
+                  <div>
+                    <ul>
+                      <li>Prototypage avec VueJS sur la création d'assistant</li>
+                      <li>Intégration d'un RAG from scratch en JavaScript</li>
+                      <li>Mise en place d'une bibliothèque d'icônes interactives</li>
+                      <li>Gestion de la mémoire de l'application pour le stockage des conversations</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <!-- Work 2 -->
+            <div class="col-md-4 mb-5">
+                <div class="work-card">
+                  <div class="project-title">
+                    <img src="media/images/Company/Skesia_Logo.jpg" class="company-logo" alt="Company Logo">
+                    <h4>Game Programmer - Skesia</h4>
+                    <h6>(Juil. 2025 - Août. 2025)</h6>
+                  </div>
+                  <div>
+                    <ul>
+                      <li>Programmation de système permettant la communication entre Unity et Firebase</li>
+                      <li>Développement d’un module de mise à jour pour le jeu</li>
+                      <li>Déploiement de Cloud function sur Firebase</li>
+                      <li>Debug et optimisation du jeu sur Unity</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- BEST PROJECTS -->
+        <div class="row mt-4">
+          <h2 class="section-title">Highlights projects</h2>
+        </div>
+        <div class="row mt-4">
+            <!-- first project line -->
+            <div class="col-md-4 mb-5">
+                <a href="pages/projects/project_adventure.html" class="game-btn d-block">
+                    <img src="media/images/poster/poster_lightmoor.png" alt="Game Logo">
+                </a>
+                <h6 class="project-title">Gameplay programmer – Lightmoor</h6>
+                <div class="project-skills">
+                  <span class="skill-tag" style="background-color:#5BCEFA">Unreal</span>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <a href="pages/projects/project_freetoplay.html" class="game-btn d-block">
+                    <img src="media/images/poster/poster_landsliders.png" alt="Game Logo">
+                </a>
+                <h6 class="project-title">Gameplay programmer - Landsliders</h6>
+                <div class="project-skills">
+                  <span class="skill-tag" style="background-color:#5BCEFA">Unity</span>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <a href="pages/projects/project_platformer.html" class="game-btn d-block">
+                    <img src="media/images/poster/poster_vampy_valentine.png" alt="Game Logo">
+                </a>
+                <h6 class="project-title">Gampeplay programmer & Game designer – Vampy Valentine</h6>
+                <div class="project-skills">
+                  <span class="skill-tag" style="background-color:#5BCEFA">Unity</span>
+                </div>
+            </div>
+        </div>
+        <!-- OTHER SCHOOL PROJECTS -->
+        <div class="row mt-4">
+          <h2 class="section-title">Students projects & prototypes</h2>
+        </div>
+        <div class="row mt-4">
+            <!-- first project line -->
+            <!-- <div class="col-md-4 mb-5">
+                <a href="project3.html" class="game-btn d-block">
+                    <img src="media/images/poster/poster_.png" alt="Game Logo">
+                </a>
+                <h6 class="project-title">Gameplay programmer - VR Game</h6>
+                <div class="project-skills">
+                  <span class="skill-tag" style="background-color:#5BCEFA">Unreal</span>
+                </div>
+            </div> -->
+            <div class="col-md-4 mb-5">
+                <a href="pages/projects/project_infiltration.html" class="game-btn d-block">
+                    <img src="media/images/poster/poster_infiltration.png" alt="Game Logo">
+                </a>
+                <h6 class="project-title">Gameplay programmer & Level designer – Stealth Project</h6>
+                <div class="project-skills">
+                  <span class="skill-tag" style="background-color:#5BCEFA">Unreal</span>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <a href="pages/projects/project_rush.html" class="game-btn d-block">
+                    <img src="media/images/poster/poster_rush.png" alt="Game Logo">
+                </a>
+                <h6 class="project-title">Gameplay programmer & Level designer - RUSH</h6>
+                <div class="project-skills">
+                  <span class="skill-tag" style="background-color:#5BCEFA">Unity</span>
+                </div>
+            </div>
+            <!-- second project line -->
+            <div class="col-md-4 mb-5">
+                <a href="pages/projects/project_sokoban.html" class="game-btn d-block">
+                    <img src="media/images/poster/poster_sokoban.jpg" alt="Game Logo">
+                </a>
+                <h6 class="project-title">Gameplay programmer & Game designer - Soakeded or banned</h6>
+                <div class="project-skills">
+                  <span class="skill-tag" style="background-color:#5BCEFA">Godot</span>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <a href="pages/projects/project_shmup.html" class="game-btn d-block">
+                    <img src="media/images/poster/poster_shmup.png" alt="Game Logo">
+                </a>
+                <h6 class="project-title">Gameplay programmer & Game designer - Flee from Paris</h6>
+                <div class="project-skills">
+                  <span class="skill-tag" style="background-color:#5BCEFA">Godot</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
