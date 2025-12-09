@@ -1,0 +1,13 @@
+/* PROJECT IMAGES */
+.game-btn img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #222;
+  transition: transform 0.3s ease;
+}
+
+.game-btn img:hover {
+  transform: scale(1.03);
+}
