@@ -8,10 +8,6 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   color: #e7e7e7;
   background-color: #0d0d0f;
-  background-image:
-      linear-gradient(#2222 1px, transparent 1px),
-      linear-gradient(90deg, #2222 1px, transparent 1px);
-  background-size: 80px 80px;
 }
 
 /* HEADER */
@@ -92,8 +88,35 @@ letter-spacing: 1px;
   transition: transform 0.3s ease;
 }
 
-.game-btn img:hover {
+.game-btn:hover {
   transform: scale(1.03);
+}
+
+.badge-icon {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+
+  width: 36px;
+  height: 36px;
+
+  background: #000;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.badge-icon img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 /* PROJECT TITLE */
