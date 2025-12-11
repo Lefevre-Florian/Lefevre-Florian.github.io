@@ -7,17 +7,17 @@ body {
   padding: 0;
   font-family: 'Space Grotesk', sans-serif;
   color: #e7e7e7;
-  background-color: #0d0d0f;
+  background-color: #000000;
 }
 
 /* HEADER */
 .header {
-text-align: center;
-font-size: 48px;
-font-weight: 600;
-padding: 80px 20px;
-background: linear-gradient(to bottom, #000, #0d0d0f 60%);
-letter-spacing: 1px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  padding: 20px 20px;
+  background: linear-gradient(to bottom, #000, #0D0E0E 100%);
+  letter-spacing: 1px;
 }
 
 /* SECTION TITLE */
@@ -27,16 +27,41 @@ letter-spacing: 1px;
   text-align: center;
   font-weight: 600;
   letter-spacing: 2px;
-  margin-top: 120px;
-  margin-bottom: 40px;
-  padding-bottom: 12px;
   border-bottom: 2px solid #56a6ff;
   display: inline-block;
 }
 
+.section {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Welcome: blue tint */
+.section-welcome {
+    background: linear-gradient(to bottom, #0D0E0E, #131415 100%);
+}
+
+/* Work Experience: purple tint */
+.section-work {
+    /* background-color: #131415; */
+    background: linear-gradient(to bottom, #131415, #0D0E0E 100%);
+}
+
+/* Projects: teal tint */
+.section-projects {
+    background-color: #0D0E0E;
+}
+
+/* Prototypes: dark grey tint blending to base color */
+.section-prototypes {
+  background: linear-gradient(to bottom, #0D0E0E, #131415 100%);
+  padding-bottom: 100px;
+}
+
+
 /* TITLE BLOCK */
 .welcome-title {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .welcome-title h2 {
@@ -49,7 +74,6 @@ letter-spacing: 1px;
     width: 60px;
     height: 4px;
     background-color: #4db3ff;
-    margin-bottom: 10px;
 }
 
 /* CARDS (Projects, Work Experience) */
@@ -121,7 +145,6 @@ letter-spacing: 1px;
 
 /* PROJECT TITLE */
 .project-title {
-  margin-top: 12px;
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
@@ -130,7 +153,6 @@ letter-spacing: 1px;
 
 /* PROJECT SKILLS BELOW IMAGES */
 .project-skills {
-  margin-top: 14px;
   text-align: center;
 }
 

@@ -72,6 +72,11 @@ body {
   letter-spacing: 1px;
 }
 
+.col-md-5 {
+  display: flex;
+  flex-direction: column;
+}
+
 /* PROJECT SKILLS BELOW IMAGES */
 .project-skills {
   margin-top: 14px;

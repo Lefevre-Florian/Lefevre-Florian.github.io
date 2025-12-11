@@ -1,0 +1,21 @@
+/* Navigation under the header */
+.main-nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.main-nav a {
+    font-size: 16px;
+    font-weight: 80;
+    color: #d6d6d6;
+    text-decoration: none;
+    transition: color 0.25s ease, transform 0.2s ease;
+    letter-spacing: 1px;
+}
+
+.main-nav a:hover {
+    color: #2b5e94;
+    transform: scale(1.08);
+}
