@@ -82,6 +82,10 @@ body {
   flex-direction: column;
   background: #141418;
   border: 1px solid #1f1f23;
+  min-width: 350px;
+  max-width: 400px;
+  min-height: 350px;
+  max-height: 400px;
   padding: 30px;
   border-radius: 14px;
   box-shadow: 0 6px 25px rgba(0,0,0,0.35);
