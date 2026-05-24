@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEFEVRE Florence</title>
+    <link rel="shortcut icon" type="image/x-icon" href="media/images/logo/website_logo.png">
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-5.0.2-dist/custom_css/cover.css" rel="stylesheet">
     <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -36,6 +37,34 @@
       .icon-btn:hover{
         background-color: #ebebeb;
         transform: scale(1.03);
+      }
+
+      #profile-img {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+
+        border-radius: 50%;
+        border: 4px solid #FFFFFF;
+      }
+
+      .coming-soon-overlay {
+        position: absolute;
+        inset: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: rgba(0, 0, 0, 0.65);
+        color: white;
+
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+
+        border-radius: inherit;
       }
     </style>
 </head>
@@ -101,6 +130,11 @@
                     </div>
                   </div>
               </div>
+              <div class="col-md-5 d-flex justify-content-center align-items-center">
+                  <img src="media/images/logo/website_logo.png"
+                       alt=""
+                       class="img-fluid" id="profile-img">
+              </div>
           </div>
         </div>
       </section>
@@ -155,8 +189,11 @@
           </div>
           <div class="row mt-4">
             <div class="col-md-4 mb-5">
-                <a href="pages/projects/project_wobblyHeist.html" class="game-btn d-block position-relative">
+                <a class="game-btn d-block position-relative">
                   <img src="media/images/poster/poster_wobbly_heist.png" alt="Game Logo">
+                  <div class="coming-soon-overlay">
+                      SOON
+                  </div>
                   <!-- Badge icon -->
                   <div class="badge-icon">
                       <img src="media/images/logo/unreal_logo.png" alt="Badge Icon">
