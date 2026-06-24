@@ -12,6 +12,37 @@
     <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../../inc/project-style.css">
     <link rel="stylesheet" href="../../inc/game-icon.css">
+    <style media="screen">
+      .person {
+        fill: transparent;
+        cursor: pointer;
+      }
+
+      .category-title {
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .p-space{
+        padding-top: 2em;
+      }
+
+      .p-explanation{
+        text-align: justify;
+      }
+
+      .div-explanation{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
 </head>
 <body>
     <!-- HEADER -->
@@ -23,58 +54,188 @@
     <!-- CONTENT CONTAINER -->
     <div class="container mt-5">
       <!-- PROJECT CONTENT SECTION -->
-      <div class="row project-card">
-          <div class="col-md-5">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6XFaMdm74tE?autoplay=1?mute=1" poster="../../media/images/poster/poster_wobbly_heist.png">
+      <div class="project-card">
+        <div class="row">
+            <div class="col-md-5">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JCAlPseT7Rk?autoplay=1?mute=1" poster="../../media/images/poster/poster_wobbly_heist.png">
+              </iframe>
+            </div>
+            <div class="col-md-7">
+                <div>
+                  <div class="line"></div>
+                  <h4>Gameplay programmer 3C - Wobbly Heist</h4>
+                  <h8>(ISART Digital)</h8>
+                  <h6>[Oct. 2025 - Mai. 2026]</h6>
+                </div>
+                <br>
+                <div>
+                  <h6><b>Techniques : </b></h6>
+                  <p>
+                    <span class="skill-tag">Unreal</span>
+                    <span class="skill-tag">Blueprint</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Perforce</span>
+                    <span class="skill-tag">Wwise</span>
+                  </p>
+                </div>
+                <br>
+                <div>
+                  <p><b>Tags : </b>Jeu d'infiltration / Jeu de puzzles</p>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <p class="m-0"><b>Plateforme :</b></p>
+                  <span class="skill-tag d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                         fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
+                      <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5
+                      1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5
+                      0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z"/>
+                    </svg>
+                  </span>
+                  <span class="skill-tag d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                         fill="currentColor" class="bi bi-playstation" viewBox="0 0 16 16">
+                      <path d="M15.858 11.451c-.313.395-1.079.676-1.079.676l-5.696 2.046v-1.509l4.192-1.493c.476-.17.549-.412.162-.538-.386-.127-1.085-.09-1.56.08l-2.794.984v-1.566l.161-.054s.807-.286 1.942-.412c1.135-.125
+                      2.525.017 3.616.43 1.23.39 1.368.962 1.056 1.356M9.625 8.883v-3.86c0-.453-.083-.87-.508-.988-.326-.105-.528.198-.528.65v9.664l-2.606-.827V2c1.108.206 2.722.692 3.59.985 2.207.757 2.955
+                      1.7 2.955 3.825 0 2.071-1.278 2.856-2.903 2.072Zm-8.424 3.625C-.061 12.15-.271 11.41.304 10.984c.532-.394 1.436-.69 1.436-.69l3.737-1.33v1.515l-2.69.963c-.474.17-.547.411-.161.538.386.126
+                      1.085.09 1.56-.08l1.29-.469v1.356l-.257.043a8.45 8.45 0 0 1-4.018-.323Z"/>
+                    </svg>
+                  </span>
+                </div>
+                <div class="row embedded-app">
+                  <iframe style="min-height : 190px; "src="https://store.steampowered.com/widget/4196110/">
+                  </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row category-title div-explanation">
+          <h5>#Dev-Log</h5>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="m-0 p-explanation">
+              En tant que Gameplay Programmeuse spécialisée sur les 3Cs durant se projet, j'ai pu travailler sur les aspects physiques du contrôle des différents personnages.
+              En début de production une physique intégralement custom fut envisagée et protoypée, un character custom (Héritant de Pawn). J'ai donc programmé les collisions,
+              mouvement (escalier, acceleration, gravité...) custom pour les personnages. Même si par la suite et pour des raisons de production et de temps la solution d'utiliser
+              le ACharacter d'Unreal fut retenu.
+            </p>
+            <p class="m-0 p-space p-explanation">
+              Pour la partie empilement des personnages il s'agit d'une physique custom qui est à l'oeuvre sur laquelle j'ai travaillé, la physique permet de donner cet aspect
+              branlant permanent de la pile de capybara renforçant l'aspect humoristique du jeu. La physique en elle-même étant baséé grandement sur le principe des ressors harmoniques
+              afin de produire les différentes forces et donc retours de forces à l'oeuvre lors des déplacements.
+            </p>
+          </div>
+          <div class="col-md-6 video-container">
+            <iframe width="90%" height="90%" src="../../media/videos/Before_After_TRENCHCAT_Stack_Physic.mp4">
             </iframe>
           </div>
-          <div class="col-md-7">
-              <div>
-                <div class="line"></div>
-                <h4>Gameplay programmer 3C - Wobbly Heist</h4>
-                <h8>(ISART Digital)</h8>
-                <h6>[Oct. 2025 - Mai. 2026]</h6>
-              </div>
-              <br>
-              <div>
-                <h6><b>Techniques : </b></h6>
-                <p>
-                  <span class="skill-tag">Unreal</span>
-                  <span class="skill-tag">Blueprint</span>
-                  <span class="skill-tag">C++</span>
-                  <span class="skill-tag">Perforce</span>
-                  <span class="skill-tag">Wwise</span>
-                </p>
-              </div>
-              <br>
-              <div>
-                <p><b>Tags : </b>Jeu d'infiltration / Jeu de puzzles</p>
-              </div>
-              <div class="d-flex align-items-center gap-2">
-                <p class="m-0"><b>Plateforme :</b></p>
-                <span class="skill-tag d-flex align-items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                       fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
-                    <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5
-                    1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5
-                    0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z"/>
-                  </svg>
-                </span>
-                <span class="skill-tag d-flex align-items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                       fill="currentColor" class="bi bi-playstation" viewBox="0 0 16 16">
-                    <path d="M15.858 11.451c-.313.395-1.079.676-1.079.676l-5.696 2.046v-1.509l4.192-1.493c.476-.17.549-.412.162-.538-.386-.127-1.085-.09-1.56.08l-2.794.984v-1.566l.161-.054s.807-.286 1.942-.412c1.135-.125
-                    2.525.017 3.616.43 1.23.39 1.368.962 1.056 1.356M9.625 8.883v-3.86c0-.453-.083-.87-.508-.988-.326-.105-.528.198-.528.65v9.664l-2.606-.827V2c1.108.206 2.722.692 3.59.985 2.207.757 2.955
-                    1.7 2.955 3.825 0 2.071-1.278 2.856-2.903 2.072Zm-8.424 3.625C-.061 12.15-.271 11.41.304 10.984c.532-.394 1.436-.69 1.436-.69l3.737-1.33v1.515l-2.69.963c-.474.17-.547.411-.161.538.386.126
-                    1.085.09 1.56-.08l1.29-.469v1.356l-.257.043a8.45 8.45 0 0 1-4.018-.323Z"/>
-                  </svg>
-                </span>
-              </div>
-              <div class="row embedded-app">
-                <iframe style="min-height : 190px; "src="https://store.steampowered.com/widget/4196110/">
-                </iframe>
-              </div>
+        </div>
+        <div class="row category-title div-explanation">
+          <h5>Team Photo</h5>
+        </div>
+        <div class="row">
+          <!-- Team Photo -->
+          <div class="col-12">
+            <svg viewBox="0 0 600 150">
+                <!-- Team photo -->
+                <image
+                    href="../../media/images/teams/team_wobbly_heist.jpg"
+                    width="600"
+                    height="150"
+                />
+                <!-- Artist : Paul Herbiniere -->
+                <a href="https://www.linkedin.com/in/paul-herbini%C3%A8re-a83788253/" target="_blank">
+                    <circle class="person" cx="210" cy="78" r="5"/>
+                    <title>Paul Herbiniere - Marketing Manager</title>
+                </a>
+                <!-- Artist : Benjamin Mesbahi-Gonon -->
+                <a href="https://www.linkedin.com/in/benjamin-mesbahi/" target="_blank">
+                    <circle class="person" cx="230" cy="68" r="5"/>
+                    <title>Benjamin Mesbahi-Gonon - Gameplay Programmer</title>
+                </a>
+                <!-- Artist : Quentin Marthe-Rose -->
+                <a href="https://www.linkedin.com/in/quentin-marthe-rose-7b7303265/" target="_blank">
+                    <circle class="person" cx="236" cy="78" r="5"/>
+                    <title>Quentin Marthe-Rose - Gameplay Programmer</title>
+                </a>
+                <!-- Artist : Antoine Hascoat -->
+                <a href="https://www.linkedin.com/in/antoine-hascoat-607b17154/" target="_blank">
+                    <circle class="person" cx="256" cy="70" r="5"/>
+                    <title>Antoine Hascoat - Level Designer</title>
+                </a>
+                <!-- Artist : Moi -->
+                <a href="">
+                    <circle class="person" cx="248" cy="78" r="5"/>
+                    <title>Florence Lefevre - 3C Gameplay Programmer</title>
+                </a>
+                <!-- Artist : Jeanne Questroy -->
+                <a href="https://www.linkedin.com/in/jeanne-questroy" target="_blank">
+                    <circle class="person" cx="264" cy="78" r="5"/>
+                    <title>Jeanne Questroy - Producer</title>
+                </a>
+                <!-- Artist : Alex Coulaud -->
+                <a href="https://www.artstation.com/alex_coulaud" target="_blank">
+                    <circle class="person" cx="280" cy="75" r="5"/>
+                    <title>Alex Coulaud - 3D Character Artist</title>
+                </a>
+                <!-- Artist : Clément Cimbaro -->
+                <a href="https://www.artstation.com/clementcimbaro" target="_blank">
+                    <circle class="person" cx="322" cy="78" r="5"/>
+                    <title>Clément Cimbaro - 3D Artist</title>
+                </a>
+                <!-- Artist : Maxime Leguevacques -->
+                <a href="https://www.linkedin.com/in/maxime-leguevacques-04b0b9283/" target="_blank">
+                    <circle class="person" cx="335" cy="70" r="5"/>
+                    <title>Maxime Leguevacques - Game Programmer</title>
+                </a>
+                <!-- Artist : Maëlle Derot -->
+                <a href="https://www.linkedin.com/in/maelle-derot/" target="_blank">
+                    <circle class="person" cx="342" cy="78" r="5"/>
+                    <title>Maëlle Derot - Narrative Designer</title>
+                </a>
+                <!-- Artist : Christophe Huang -->
+                <a href="https://www.linkedin.com/in/christophe-huang-160b22278/" target="_blank">
+                    <circle class="person" cx="354" cy="70" r="5"/>
+                    <title>Christophe Huang - Game Programmer</title>
+                </a>
+                <!-- Artist : Côme Manguy -->
+                <a href="https://www.linkedin.com/in/c%C3%B4me-mainguy-266400260/" target="_blank">
+                    <circle class="person" cx="365" cy="78" r="5"/>
+                    <title>Côme Manguy - Level Designer</title>
+                </a>
+                <!-- Artist : Louise Albert -->
+                <a href="https://www.artstation.com/louisealbert" target="_blank">
+                    <circle class="person" cx="262" cy="110" r="5"/>
+                    <title>Louise Albert - UI Designer</title>
+                </a>
+                <!-- Artist : Linlana Perrin -->
+                <a href="https://www.artstation.com/linlanaperrin" target="_blank">
+                    <circle class="person" cx="278" cy="105" r="5"/>
+                    <title>Linlana Perrin - Concept Artist</title>
+                </a>
+                <!-- Artist : Nils Germain -->
+                <a href="https://nilsgdc.wixstudio.com/portfolio" target="_blank">
+                    <circle class="person" cx="288" cy="120" r="5"/>
+                    <title>Nils Germain - Game Designer</title>
+                </a>
+                <!-- Artist : Eva Martins -->
+                <a href="https://www.artstation.com/evaleitaomartins" target="_blank">
+                    <circle class="person" cx="300" cy="105" r="5"/>
+                    <title>Eva Martins - 3D Artist</title>
+                </a>
+                <!-- Artist : Chanelle Mazenq -->
+                <a href="https://artstation.com/chmazenq/" target="_blank">
+                    <circle class="person" cx="320" cy="105" r="5"/>
+                    <title>Chanelle Mazenq - 3D Animator</title>
+                </a>
+                <!-- Artist : Mila Benoist -->
+                <a href="https://www.linkedin.com/in/mila-benoist/" target="_blank">
+                    <circle class="person" cx="345" cy="110" r="5"/>
+                    <title>Mila Benoist - Sound Designer</title>
+                </a>
+            </svg>
           </div>
+        </div>
       </div>
       <!-- OTHER PROJECT SECTION -->
       <div class="row mt-4">
