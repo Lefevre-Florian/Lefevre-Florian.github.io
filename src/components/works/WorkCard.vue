@@ -27,6 +27,8 @@
 </template>
 
 <script setup>
+    import "../../style/components/work-card.css"
+
     const props = defineProps({
         work : Object
     });

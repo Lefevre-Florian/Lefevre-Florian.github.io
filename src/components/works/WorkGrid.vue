@@ -21,6 +21,8 @@
 
 
 <script setup>
+import "../../style/components/work-card.css"
+
 import { ref } from 'vue'
 import WorkCard from './WorkCard.vue'
 import { works } from '../../data/works'

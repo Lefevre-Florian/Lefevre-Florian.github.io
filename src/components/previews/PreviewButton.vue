@@ -1,16 +1,19 @@
 <template>
-  <a :href="props.link" class="game-btn d-block">
+  <RouterLink :to="props.link" class="game-btn d-block">
     <img
       :src="`/poster/${props.img}`"
       :alt="props.title"
     >
-  </a>
+  </RouterLink>
 </template>
 
 <script setup>
+    /* Import style */
+    import "../../style/components/game.css"
+
     const props = defineProps({
         link : String,
-        img : Image,
+        img : String,
         alt : String
     });
 </script>
