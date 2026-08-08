@@ -1,0 +1,39 @@
+.game-btn img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #222;
+  transition: transform 0.3s ease;
+}
+
+.game-btn:hover {
+  transform: scale(1.03);
+}
+
+.badge-icon {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+
+  width: 36px;
+  height: 36px;
+
+  background: #000;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.badge-icon img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}

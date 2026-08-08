@@ -1,0 +1,18 @@
+.p-space{
+    padding-top: 2em;
+}
+
+.p-explanation{
+    text-align: justify;
+}
+
+.div-explanation{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
