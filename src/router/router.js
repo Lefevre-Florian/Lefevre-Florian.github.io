@@ -20,7 +20,18 @@ const router = createRouter({
         path: '/prototypes/:id',
         component: PrototypeView
     }
-  ]
+  ],
+
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    }
+
+    return {
+      top: 0,
+      behavior: 'smooth'
+    }
+  }
 })
 
 export default router
