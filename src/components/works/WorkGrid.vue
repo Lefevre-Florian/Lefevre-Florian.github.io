@@ -2,9 +2,7 @@
   <section class="section section-work" id="works">
     <div class="container">
       <div class="row mt-4">
-        <h2 class="section-title">
-          Expériences professionnelles
-        </h2>
+        <h2 class="section-title">{{ $t('general.works') }}</h2>
       </div>
       <div class="work-cards">
         <WorkCard

@@ -4,15 +4,19 @@
         "works" : "Expériences professionnelles"
     },
     "about" : {
-        "welcome" : "Bienvenue !"
+        "welcome" : "BIENVENUE !",
+        "introduction" : "Bonjour et bienvenue, je suis <b><em>Lefevre Florence</em></b>, programmeuse gameplay. J'ai eu l'occasion de travailler sur les différents aspects du développement et de l'intégration. J'ai une appétance particulière pour <b><em>la programmation 3C et la programmation de jeu en réseau</em></b>. Je suis aussi intéressée par la <b><em>programmation d'outils</em></b>.",
+        "dev-skills" : "Je suis formée en<span class=\"skill-tag\">C++</span>,<span class=\"skill-tag\">Blueprint</span>,<span class=\"skill-tag\">C#</span>sur les moteurs<span class=\"skill-tag\">Godot</span>,<span class=\"skill-tag\">Unity</span>,<span class=\"skill-tag\">Unreal</span>.",
+        "design-skills" : "J'ai eu aussi la possibilité d'apprendre la conception de jeu, à travers divers sujets comme le<span class=\"skill-tag\">Level design</span>, ou l'<span class=\"skill-tag\">UX design</span>.",
+        "contact" : "Si vous souhaitez me contacter :"
     },
     "games" : {
-
+        
     },
     "prototypes" : {
 
     },
     "works" : {
-
+        "task" : "Tâches :"
     }
 }

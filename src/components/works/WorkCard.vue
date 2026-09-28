@@ -8,7 +8,7 @@
             >
             <h4>{{ work.position }}</h4>
             <h5>[{{ work.company }}]</h5>
-            <h6>{{ work.date }}</h6>
+            <h6>{{ work.date[locale] }}</h6>
           </div>
 
           <!-- DETAILS PART (Hidden by default) -->
@@ -16,10 +16,10 @@
             <p>
               <span class="skill-tag" v-for="tag in work.tags">{{ tag }}</span>
             </p>
-            <p>Tâches réalisées : </p>
+            <p>{{ $t('works.task') }}</p>
             <ul>
               <li v-for="description in work.description">
-                {{ description }}
+                {{ description[locale] }}
               </li>
             </ul>
           </div>
@@ -27,9 +27,15 @@
 </template>
 
 <script setup>
-    import "../../style/components/work-card.css"
+    /*Import localization */
+    import { useI18n } from 'vue-i18n'
+
+    /* Import components */
+    import "../../style/components/work-card.css";
 
     const props = defineProps({
         work : Object
     });
+
+    const {locale} = useI18n();
 </script>

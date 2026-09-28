@@ -11,32 +11,15 @@
                     <div class="col-md-7">
                         <div class="welcome-title">
                             <div class="welcome-line"></div>
-                            <h2>BIENVENUE</h2>
+                            <h2>{{ $t("about.welcome") }}</h2>
                         </div>
                         <div>
-                            <p>
-                                Bonjour et bienvenue, je suis <b><em>Lefevre Florence</em></b>, programmeuse gameplay. J'ai eu l'occasion de travailler sur les différents aspects du développement et de l'intégration. J'ai une appétance
-                                particulière pour la programmation 3C et la programmation de jeu en réseau. Je suis aussi intéressée par la programmation d'outils.
-                            </p>
-                            <p>
-                                Je suis formée en
-                                <span class="skill-tag">C++</span>,
-                                <span class="skill-tag">Blueprint</span>,
-                                <span class="skill-tag">C#</span>
-                                sur
-                                <span class="skill-tag">Godot</span>,
-                                <span class="skill-tag">Unity</span>,
-                                <span class="skill-tag">Unreal</span>.
-                            </p>
-                            <p>
-                                J'ai eu aussi la possibilité d'apprendre la conception de jeu, à travers divers sujets comme le
-                                <span class="skill-tag">Level design</span>,
-                                ou l'<span class="skill-tag">UX design</span>.
-                                <br>
-                            </p>
+                            <p v-html="$t('about.introduction')"></p>
+                            <p v-html="$t('about.dev-skills')"></p>
+                            <p v-html="$t('about.design-skills')"></p>
                         </div>
                         <div>
-                            <p><b>Si vous souhaitez me contacter :</b></p>
+                            <p><b>{{ $t("about.contact") }}</b></p>
                             <div>
                                 <a href="mailto:lefevreflorian18@gmail.com">
                                     <span class="icon-btn">
@@ -69,7 +52,7 @@
         <section class="section section-projects" id="projects">
             <div class="container">
                 <div class="row mt-4">
-                    <h2 class="section-title">Projets</h2>
+                    <h2 class="section-title">{{ $t('general.projects') }}</h2>
                 </div>
                 <div class="row mt-4">
                     <GameButton 

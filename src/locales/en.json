@@ -4,15 +4,13 @@
         "works" : "Work Experiences"
     },
     "about" : {
-        "welcome" : "Welcome !"
-    },
-    "games" : {
-
-    },
-    "prototypes" : {
-
+        "welcome" : "WELCOME !",
+        "introduction" : "Hello and welcome, I am <b><em>Florence Lefevre</em></b>, a Gameplay Programmer. Throughout my studies and professional experiences, I have worked on various aspects of game development, including asset integration, code optimization, gameplay programming, and game feel. I have a particular interest in <b><em>3C and network programming</em></b>, as well as <b><em>tools programming</em></b>.",
+        "dev-skills" : "I am trained in <span class=\"skill-tag\">C++</span>,<span class=\"skill-tag\">Blueprint</span>,<span class=\"skill-tag\">C#</span> and have experience working with the following game engines: <span class=\"skill-tag\">Godot</span>,<span class=\"skill-tag\">Unity</span>,<span class=\"skill-tag\">Unreal</span>.",
+        "design-skills" : "I also had the opportunity to learn about game design. Through various projects, I was able to develop my skills in <span class=\"skill-tag\">Level design</span>, and <span class=\"skill-tag\">UX design</span>.",
+        "contact" : "If you wish to contact me:"
     },
     "works" : {
-
+        "task" : "Tasks:"
     }
 }
