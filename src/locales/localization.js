@@ -7,7 +7,8 @@ const traduction = createI18n({
   legacy: false,
   locale: 'fr',
   fallbackLocale: 'fr',
-  messages: { en, fr }
+  messages: { en, fr },
+  warnHtmlMessage : false
 })
 
 export default traduction
