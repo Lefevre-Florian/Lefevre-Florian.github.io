@@ -11,6 +11,7 @@
             <PreviewButton
                 :link="props.urlBase + prototype.id"
                 :img="prototype.poster"
+                :title="prototype.title"
             />
         </div>
     </div>

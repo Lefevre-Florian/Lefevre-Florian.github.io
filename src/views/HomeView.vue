@@ -3,11 +3,6 @@
         <!-- HEADER SECTION -->
         <div class="header">
             LEFEVRE Florence
-            <nav class="main-nav">
-                <a href="#about">A propos</a>
-                <a href="#works">Expériences</a>
-                <a href="#projects">Projets</a>
-            </nav>
         </div> 
         <!-- WELCOME SECTION -->
         <section class="section section-welcome" id="about">
@@ -21,7 +16,7 @@
                         <div>
                             <p>
                                 Bonjour et bienvenue, je suis <b><em>Lefevre Florence</em></b>, programmeuse gameplay. J'ai eu l'occasion de travailler sur les différents aspects du développement et de l'intégration. J'ai une appétance
-                                particulière pour la programmation 3C. Mais je suis aussi intéressée par la programmation d'outils ou l'optimisation de code.
+                                particulière pour la programmation 3C et la programmation de jeu en réseau. Je suis aussi intéressée par la programmation d'outils.
                             </p>
                             <p>
                                 Je suis formée en
@@ -43,7 +38,7 @@
                         <div>
                             <p><b>Si vous souhaitez me contacter :</b></p>
                             <div>
-                                <a href="mailto:lefevreflorian18@gmail.com?subject=feedback">
+                                <a href="mailto:lefevreflorian18@gmail.com">
                                     <span class="icon-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#000000" class="bi bi-envelope" viewBox="0 0 16 16">
                                             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>

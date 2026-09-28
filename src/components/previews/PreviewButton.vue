@@ -5,6 +5,7 @@
       :alt="props.title"
     >
   </RouterLink>
+  <span class="game-title">{{ props.title }}</span>
 </template>
 
 <script setup>
@@ -14,6 +15,7 @@
     const props = defineProps({
         link : String,
         img : String,
-        alt : String
+        alt : String,
+        title : String
     });
 </script>
