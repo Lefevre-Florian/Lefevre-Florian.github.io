@@ -1,23 +1,29 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
+import traduction from '../locales/localization.js'
+
 import HomeView from '../views/HomeView.vue'
 import GameView from '../views/GameView.vue'
 import PrototypeView from '../views/PrototypeView.vue'
+
+const language = ["en", "fr"]
 
 const router = createRouter({
   history: createWebHashHistory(),
 
   routes: [
     {
-        path: '/',
+        path: '/:locale',
         component: HomeView
     },
     {
-        path: '/games/:id',
+        path: '/:locale/games/:id',
+        name : "games",
         component: GameView
     },
     {
-        path: '/prototypes/:id',
+        path: '/:locale/prototypes/:id',
+        name : "prototypes",
         component: PrototypeView
     }
   ],
@@ -32,6 +38,17 @@ const router = createRouter({
       behavior: 'smooth'
     }
   }
+  
+})
+
+router.beforeEach((to) => {
+  const locale = to.params.locale
+
+  if (!language.includes(locale)) {
+    return `/${traduction.global.locale.value}`
+  }
+
+  traduction.global.locale.value = locale
 })
 
 export default router

@@ -9,7 +9,13 @@
             class="scroll-item"
         >
             <PreviewButton
-                :link="props.urlBase + prototype.id"
+                :link="{
+                    name: props.name,
+                    params: {
+                        locale,
+                        id: prototype.id
+                    }
+                }"
                 :img="prototype.poster"
                 :title="prototype.title"
             />
@@ -17,13 +23,19 @@
     </div>
 </template>
 <script setup>
+    /* Import localization */
+    import { useI18n } from "vue-i18n";
+
+    /* Import components */
     import PreviewButton from './PreviewButton.vue';
+
+    const {locale} = useI18n();
 
     const props = defineProps({
         title : String,
-        urlBase : String,
+        name : String,
         elements : Array
-    })
+    });
 </script>
 <style scoped>
     .scroll {

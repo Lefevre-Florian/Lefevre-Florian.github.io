@@ -9,13 +9,13 @@
 </template>
 
 <script setup>
-    /* Import style */
-    import "../../style/components/game.css"
-
-    const props = defineProps({
-        link : String,
-        img : String,
-        alt : String,
-        title : String
-    });
+  /* Import style */
+  import "../../style/components/game.css";
+  
+  const props = defineProps({
+      link : {type : [String, Object], required : true},
+      img : String,
+      alt : String,
+      title : String
+  });
 </script>

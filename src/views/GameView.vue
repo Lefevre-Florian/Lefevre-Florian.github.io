@@ -56,15 +56,15 @@
             <!-- OTHER PROJECT SECTION -->
             <PreviewLine
                 :title="`Projects`"
-                :urlBase="`/games/`"
+                :name="`games`"
                 :elements="games">
             </PreviewLine>
         </div>
     </RouterView>
 </template>
 <script setup>
-    import { computed } from 'vue'
-    import { useRoute } from 'vue-router'
+    import { computed } from 'vue';
+    import { useRoute } from 'vue-router';
 
     /* Import style */
     import "../style/projectview.css";
@@ -77,11 +77,11 @@
     import PreviewLine from '../components/previews/PreviewLine.vue';
 
     /* Import data */
-    import { games } from '../data/games.js'
+    import { games } from '../data/games.js';
 
-    const route = useRoute()
+    const route = useRoute();
 
     const game = computed(() => {
         return games.find(game => game.id === route.params.id)
-    })
+    });
 </script>

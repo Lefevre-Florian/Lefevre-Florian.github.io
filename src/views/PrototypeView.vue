@@ -28,15 +28,15 @@
             <!-- OTHER PROJECT SECTION -->
             <PreviewLine
                 :title="`Projects`"
-                :urlBase="`/prototypes/`"
+                :name="`prototypes`"
                 :elements="prototypes">
             </PreviewLine>
         </div>
     </RouterView>
 </template>
 <script setup>
-    import { computed } from 'vue'
-    import { useRoute } from 'vue-router'
+    import { computed } from 'vue';
+    import { useRoute } from 'vue-router';
 
     /* Import style */
     import "../style/projectview.css";
@@ -50,9 +50,9 @@
     /* Import data */
     import { prototypes } from '../data/prototypes.js'
 
-    const route = useRoute()
+    const route = useRoute();
 
     const prototype = computed(() => {
         return prototypes.find(prototype => prototype.id === route.params.id)
-    })
+    });
 </script>

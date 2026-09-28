@@ -85,7 +85,7 @@
             <!-- PROTOYPE SECTION -->
             <div class="container">
                 <PreviewLine 
-                    :urlBase="`/prototypes/`"
+                    :name="`prototypes`"
                     :elements="prototypes"
                     :title="`Prototypes`">
                 </PreviewLine>
@@ -98,7 +98,6 @@
     import "../style/titlecard.css";
 
     /* Import components */
-    import PreviewButton from '../components/previews/PreviewButton.vue';
     import WorkGrid from '../components/works/WorkGrid.vue';
     import GameButton from '../components/games/GameButton.vue';
     import PreviewLine from "../components/previews/PreviewLine.vue";

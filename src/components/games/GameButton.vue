@@ -1,6 +1,6 @@
 <template>
     <div class="col-md-4 mb-5">
-        <RouterLink :to="`/games/${game.id}`" class="game-btn d-block position-relative">
+        <RouterLink :to="`/${locale}/games/${game.id}`" class="game-btn d-block position-relative">
             <img :src="`/poster/${game.poster}`" alt="Game Logo">
             <!-- Badge icon -->
             <div class="badge-icon">
@@ -14,9 +14,15 @@
 
 <script setup>
     /* Import style */
-    import "../../style/components/game.css"
+    import "../../style/components/game.css";
 
+    /* Import localization */
+    import { useI18n } from "vue-i18n";
+
+    /* Import data */
     import { Engine } from '../../utils/engine';
+
+    const {locale} = useI18n();
 
     const props = defineProps({
         game: {
