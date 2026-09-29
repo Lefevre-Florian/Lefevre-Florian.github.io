@@ -7,6 +7,9 @@
     <section class="section section-welcome" id="about">
         <div class="container mt-5">
             <div class="row">
+                <div class="container mt-5">
+                    <Translate></Translate>
+                </div>
                 <div class="col-md-7">
                     <div class="welcome-title">
                         <div class="welcome-line"></div>
@@ -86,4 +89,5 @@
     /* Import data */
     import {prototypes} from '../data/prototypes.js';
     import {games} from '../data/games.js';
+import Translate from "../components/Translate.vue";
 </script>
