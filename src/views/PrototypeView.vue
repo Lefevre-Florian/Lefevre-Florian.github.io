@@ -20,7 +20,7 @@
                         </ProjectInformation>
                         <div>
                             <p><b>Description : </b></p>
-                            <p v-for="log in prototype.devlog" v-html="log"></p>
+                            <p v-for="log in prototype.devlog" v-html="log[locale]"></p>
                         </div>
                     </div>
                 </div>
