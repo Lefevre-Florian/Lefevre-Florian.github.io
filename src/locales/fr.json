@@ -10,13 +10,12 @@
         "design-skills" : "J'ai eu aussi la possibilité d'apprendre la conception de jeu, à travers divers sujets comme le<span class=\"skill-tag\">Level design</span>, ou l'<span class=\"skill-tag\">UX design</span>.",
         "contact" : "Si vous souhaitez me contacter :"
     },
-    "games" : {
-        
-    },
-    "prototypes" : {
-
-    },
     "works" : {
         "task" : "Tâches :"
+    },
+    "projects" : {
+        "platform" : "Platforme :",
+        "technology" : "Techniques :",
+        "duration" : "Durée :"
     }
 }

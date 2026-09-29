@@ -15,17 +15,17 @@
                         <ProjectInformation
                         :title="game.title"
                         :position="game.position"
-                        :date="game.date"
+                        :date="game.date[locale]"
                         :technology="game.technology">
                         </ProjectInformation>
-                        <div v-if="game.description.length !== 0">
-                            <p><b>Description : </b>{{ game.description }}</p>
+                        <div v-if="game.description !== null">
+                            <p><b>Description : </b>{{ game.description[locale] }}</p>
                         </div>
                         <div>
-                            <p><b>Tags : </b>{{ game.tags }}</p>
+                            <p><b>Tags : </b>{{ game.tags[locale] }}</p>
                         </div>
                         <div class="d-flex align-items-center gap-2">
-                            <p class="m-0"><b>Plateforme :</b></p>
+                            <p class="m-0"><b>{{ $t('projects.platform') }}</b></p>
                             <GamePlatformIcon v-for="platform in game.platform" :type="platform"></GamePlatformIcon>
                         </div>
                         <div class="row embedded-app">
@@ -78,6 +78,11 @@
 
     /* Import data */
     import { games } from '../data/games.js';
+
+    /* Import localization */
+    import { useI18n } from 'vue-i18n';
+
+    const {locale} = useI18n();
 
     const route = useRoute();
 

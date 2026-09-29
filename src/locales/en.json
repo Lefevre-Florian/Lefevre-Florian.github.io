@@ -12,5 +12,10 @@
     },
     "works" : {
         "task" : "Tasks:"
+    },
+    "projects" : {
+        "platform" : "Platform:",
+        "technology" : "Technologies:",
+        "duration" : "Duration:"
     }
 }

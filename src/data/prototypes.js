@@ -22,7 +22,10 @@ export const prototypes = [
         title : "Prototype : Multiplayer Game",
         position : "Gameplay programmer",
         company : "ISART Digital",
-        duration : "4 semaines",
+        duration : {
+            fr : "4 semaines",
+            en : "4 weeks"
+        },
         technology : ["Unreal", "C++", "Blueprint", "Git"],
         devlog : [
             `Première expérience de la programmation en réseau avec ce nouveau prototype. J'ai eu l'occasion d'apprendre énormément sur le système de replication d'Unreal Engine 5 
@@ -40,7 +43,10 @@ export const prototypes = [
         title : "Prototype : VR Game",
         position : "Gameplay programmer",
         company : "ISART Digital",
-        duration : "1 semaine",
+        duration : {
+            fr : "1 semaine",
+            en : "1 week"
+        },
         technology : ["Unreal", "Blueprint", "Perforce"],
         devlog : [
             `Découverte de la conception de jeu en VR avec Unreal Engine 5, avec une expérimentation sur la manipulation de canne à pêche en utilisant des schemes (c-à-d
@@ -56,7 +62,10 @@ export const prototypes = [
         title : "Prototype : Stealth Game",
         position : "Gameplay programmer & Level designer",
         company : "ISART Digital",
-        duration : "4 semaines",
+        duration : {
+            fr : "4 semaines",
+            en : "4 weeks"
+        },
         technology : ["Unreal", "Blueprint", "Perforce"],
         devlog : [
             `Apprentissage de la conception et programmation de comportements d'IA (inspection, poursuite, recherche active...) en utilisant le <b>behaviour tree</b> d'Unreal Engine 5
@@ -70,7 +79,10 @@ export const prototypes = [
         title : "Prototype : RUSH Game",
         position : "Gameplay programmer & Level designer",
         company : "ISART Digital",
-        duration : "4 semaines",
+        duration : {
+            fr : "4 semaines",
+            en : "4 weeks"
+        },
         technology : ["Unity", "C#", "Git"],
         devlog : [
             `Reproduction du jeu RUSH dans le cadre d'un TP, mise en application des principes mathématiques (quaternion, prod. scalaire) pour le déplacement et les animations des cubes.
@@ -84,7 +96,10 @@ export const prototypes = [
         title : "Prototype : Sokoban",
         position : "Gameplay programmer & Level designer",
         company : "ISART Digital",
-        duration : "8 semaines",
+        duration : {
+            fr : "8 semaines",
+            en : "8 weeks"
+        },
         technology : ["Godot", "C#", "Git"],
         devlog : [
             `Création d'un prototype de sokoban et du tooling sur Godot, en mettant en place un générateur de niveau basé sur un fichier json traduit en bloc de level design
@@ -98,7 +113,10 @@ export const prototypes = [
         title : "Prototype : Shmup",
         position : "Gameplay programmer & Level designer",
         company : "ISART Digital",
-        duration : "4 semaines",
+        duration : {
+            fr : "4 semaines",
+            en : "4 weeks"
+        },
         technology : ["Godot", "C#", "Git"],
         devlog : [
             `Premier prototype de découverte de Godot, avec la mise en place de collisions custom et la création de mécanique de jeu simple pour un shoot'em up en 2D.

@@ -3,7 +3,7 @@
         <div class="col-md-6">
             <p class="m-0 p-space p-explanation" 
                 v-for="line in props.content"
-                v-html="line">
+                v-html="line[locale]">
             </p>
         </div>
         <div class="col-md-6 video-container">
@@ -13,8 +13,13 @@
     </div>
 </template>
 <script setup>
+    /* Import localization */
+    import { useI18n } from "vue-i18n";
+
     /* Import style */
-    import "../../../style/components/game-extentions.css" 
+    import "../../../style/components/game-extentions.css";
+
+    const {locale} = useI18n();
 
     const props = defineProps({
         content : Array,

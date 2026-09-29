@@ -7,7 +7,7 @@
     </div>
     <br>
     <div>
-        <h6><b>Techniques :</b></h6>
+        <h6><b>{{ $t('projects.technology') }}</b></h6>
         <p>
             <span class="skill-tag" v-for="tag in props.technology">
                 {{ tag }}

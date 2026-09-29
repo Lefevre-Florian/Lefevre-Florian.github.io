@@ -15,7 +15,7 @@
                         <ProjectInformation
                         :title="prototype.title"
                         :position="prototype.position"
-                        :date="prototype.duration"
+                        :date="$t('projects.duration') + ' ' + prototype.duration[locale]"
                         :technology="prototype.technology">
                         </ProjectInformation>
                         <div>
@@ -37,6 +37,9 @@
 <script setup>
     import { computed } from 'vue';
     import { useRoute } from 'vue-router';
+    
+    /* Import Localization */
+    import { useI18n } from 'vue-i18n';
 
     /* Import style */
     import "../style/projectview.css";
@@ -51,6 +54,8 @@
     import { prototypes } from '../data/prototypes.js'
 
     const route = useRoute();
+
+    const {locale} = useI18n();
 
     const prototype = computed(() => {
         return prototypes.find(prototype => prototype.id === route.params.id)
